@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root{
+    --sfondo: #1f1f1f;
+    --testo: 255, 255, 255
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.prima{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.seconda{
+    position: relative;
+    background-color: var(--sfondo);
+    color: rgb(var(--testo));
+    font-size: 1.2rem;
+    padding: 100px;
+}
+
+.seconda h1{
+    margin-bottom: 20px;
+}
+
+.prima::before{
+    content: '';
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, var(--sfondo), transparent);
+    z-index: 100;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#titolo{
+    font-size: 4.5em;
+}
+
+.scorri{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seconda p{
+    z-index: 10;
+}
+
+#razzo{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: -20;
+    left: 0;
+    z-index: 1;
+}
+
+#scorri{
+    animation: scorri 2s infinite;
+}
+
+#freccia{
+    animation: scorri 2s reverse infinite;
+}
+
+@keyframes scorri {
+    0%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .seconda{
+        padding: 100px 30px;
+    }
+}
+
+
+
+
+
