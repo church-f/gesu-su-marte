@@ -38,12 +38,12 @@ body{
     margin-bottom: 20px;
 }
 
-.prima::before{
+.seconda::before{
     content: '';
     height: 100px;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    top: -100px;
     left: 0;
     background: linear-gradient(to top, var(--sfondo), transparent);
     z-index: 100;
