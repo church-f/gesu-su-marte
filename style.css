@@ -76,12 +76,13 @@ img{
 }
 
 #razzo{
-    width: 50px;
+    width: 75px;
     height: auto;
     position: absolute;
     bottom: -20;
-    left: 0;
+    left: 40px;
     z-index: 1;
+    transform: rotateZ(45deg);
 }
 
 #scorri{

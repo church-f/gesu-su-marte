@@ -4,7 +4,7 @@ var scorri = document.getElementById('scorri')
 var freccia = document.getElementById('freccia')
 var razzo = document.getElementById('razzo')
 
-
+//buongiorno profe
 
 window.addEventListener('scroll', function(){
     var value = window.scrollY
@@ -15,6 +15,7 @@ window.addEventListener('scroll', function(){
     scorri.style.marginBottom = value * 2 +'px'
     freccia.style.marginBottom = value * 1.5 +'px'
     razzo.style.bottom = value * 1.5 + 'px'
+    razzo.style.left = value * 1.5 + 'px'
     
     
     
